@@ -1,0 +1,34 @@
+JS part 2
+
+1. Interaction: alert, prompt, confirm
+2. JavaScript Operators - Assignment Operators, Arithmetic Operators, Comparison Operators, Logical Operators, String Operators,
+3. JavaScript Type Conversions - Implicit Conversion, Explicit Conversion, unary
+4. Nullish operator '??'
+5. Conditional branching: if, '?'
+6. The "switch" statement
+7. Loops: while and for
+8. break and continue
+9. backticks
+10. functions
+11. function expressions
+12. arrow functions
+
+JS part 3
+
+13. callback & interval
+14. hoisting - scoping
+15. recursion 
+16. debugging
+16. arrays - push, shift, pop, unshift, length, isArray, destructuring
+
+JS part 4
+
+Arrays - for, for of, for in, at, nested array, copy array, spread, default value, swapping, concat, join, fill, 
+includes, indexOf, reverse, sort, slice, splice, filter, find, some, every, reduce, map, flat, new Array, mutation
+
+JS part 5
+
+String - charAt, charCodeAt, fromCharCode, mutation, concat, casing, includes, indexOf, startsWith, endsWith, 
+split, slice, substring, at, repeat, replace and all, trim
+
+Number - toString, toFixed, toPrecision, parseInt, parseFloat(), toLocaleString(), isNaN, isInteger
