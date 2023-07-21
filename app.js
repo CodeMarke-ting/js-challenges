@@ -1,95 +1,150 @@
-//isPalindrome
-// 121 => true
-// 12 => false
-// 5 => true
-// -121 => false
+// function isHappy(n) {
+//   const memo = [];
 
-// function isPalindrome(num) {
-//   if (num < 0) return false;
-
-//   let reverse = 0,
-//     lastDigit,
-//     original = num;
-
-//   while (original > 0) {
-//     lastDigit = original % 10; //1, 2, 1
-//     reverse = reverse * 10 + lastDigit; // 1, 12, 121
-//     original = Math.floor(original / 10); //12, 1, 0
-//   }
-
-//   return reverse === num;
-// }
-
-// console.log(isPalindrome(1001));
-// console.log(isPalindrome(221));
-// console.log(isPalindrome(12));
-// console.log(isPalindrome(5));
-// console.log(isPalindrome(-121));
-// console.log(isPalindrome(3212312423423423423));
-
-// anagram
-// function anagram(s, t) {
-//   return s.split("").sort().join("") === t.split("").sort().join("");
-// }
-
-// console.log(anagram("anagram", "nagaram"));
-// console.log(anagram("rat", "cat")); //
-
-// // fizz buzz
-// function fizzBuzz(n) {
-//   const result = [];
-//   for (let i = 1; i <= n; i++) {
-//     if (i % 3 === 0 && i % 5 === 0) {
-//       result.push("FizzBuzz");
-//     } else if (i % 3 === 0) {
-//       result.push("Fizz");
-//     } else if (i % 5 === 0) {
-//       result.push("Buzz");
-//     } else {
-//       result.push(`${i}`);
+//   while (n !== 1) {
+//     if (memo.includes(n)) {
+//       break;
 //     }
+//     memo.push(n);
+//     n = calculate(n);
 //   }
 
-//   return result;
+//   return n === 1;
 // }
 
-// console.log(fizzBuzz(15));
-
-// // two sum
-// function twoSum(nums, target) {
-//   let result = [];
-//   for (let i = 0; i < nums.length; i++) {
-//     for (let j = i + 1; j < nums.length; j++) {
-//       if (nums[i] + nums[j] === target) {
-//         result.push(i, j);
-//       }
-//     }
-//   }
-
-//   return result;
+// function calculate(n) {
+//   let sum = 0;
+//   n = n.toString().split("");
+//   n.forEach((digit) => {
+//     sum += Math.pow(digit, 2);
+//   });
+//   return sum;
 // }
 
-// console.log(twoSum([2, 11, 7, 15], 9));
-// console.log(twoSum([3, 2, 4], 6));
-// console.log(twoSum([3, 3], 6));
+// console.log(isHappy(19));
+// //2 - 4, 16, 37, 58, 89, 145, 42, 20, 4
+// console.log(isHappy(2));
+// console.log(isHappy(3));
+// console.log(isHappy(13));
+// console.log(isHappy(5));
 
-// 2 - 11, 7, 15
-// 11 - 7, 15
-// 7 - 15
+// // Math
+// console.log(Math);
+// console.log(Math.pow(10, 3));
+// console.log(Math.sqrt(25));
+// console.log(Math.sqrt(26));
+// // console.log(30 ** (1 / 3));
+// console.log(Math.abs(-110));
+// console.log(Math.min(10, 20, 3, -2));
+// console.log(Math.max(10, 20, 3, -2));
+// console.log(Math.floor(10.99999));
+// console.log(Math.ceil(10.1));
 
-// singleNumber
+// console.log(Math.round(10.5));
+// console.log(Math.random());
+// console.log(Math.random() * 10);
+// const random = Math.floor(Math.random() * 10);
+// console.log(random);
 
-function singleNumber(nums) {
-  nums = nums.sort();
+// function randomFunc(min, max) {
+//   return Math.floor(Math.random() * (max - min) + min);
+// }
 
-  for (let i = 0; i < nums.length; i += 2) {
-    if (nums[i] !== nums[i + 1]) {
-      return nums[i];
-    }
-  }
-}
+// console.log(randomFunc(10, 20));
 
-console.log(singleNumber([2, 2, 1])); // 1 2 2
-console.log(singleNumber([4, 1, 2, 1, 2])); // 1 1 2 2 4
-console.log(singleNumber([1])); // 1
-console.log(singleNumber([3, 1, 1, 2, 2, 3, 4])); // 1
+// console.log(Math.PI);
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   let curr = arr[i];
+//   acc += curr;
+// }
+
+// console.log(acc);
+
+// const sum = arr.reduce((acc, curr) => acc + curr, 10);
+// console.log(sum);
+
+// ============= OBJECTS =======================
+// string, number, null, undefined, boolean
+// object
+// object literal
+
+// let race = "Middle Asian";
+
+// const abs = "Keanu Revees";
+
+// const address = {
+//   city: "USA",
+//   postalCode: 1001,
+// };
+
+// const obj = {
+//   age: 30,
+//   "logged In": false,
+//   race,
+//   address,
+// };
+
+// console.log(obj);
+// console.log(typeof obj);
+// console.log(obj.fullName);
+// console.log(obj.age);
+// console.log(obj["logged In"]);
+
+// obj.occupation = "Actor";
+// // delete obj.occupation
+
+// // obj.fullName = null;
+
+// console.log(obj);
+
+// console.log(obj.fullName);
+
+// delete obj.age;
+
+// console.log(obj);
+
+// obj[abs] = null;
+
+// console.log(obj);
+
+// console.log(obj.address.city);
+
+// console.log(obj.state); //undefined
+
+// // optianl chaining
+// console.log(obj.state?.contact);
+
+// pass by value
+// let user = "Balaca Yusuf";
+// let writer = user;
+
+// user = "Royal";
+
+// console.log(user);
+// console.log(writer);
+
+// pass by reference
+
+// let user = {
+//   name: "Alpacino",
+// };
+
+// let contact = { contact: "Dunya" };
+
+// let admin;
+
+// console.log(user);
+// console.log(admin);
+// console.log(contact);
+// // user.name = "Robert De Niro";
+
+// user = contact;
+// admin = user;
+
+// console.log(user);
+// console.log(contact);
+// console.log(admin);

@@ -32,3 +32,33 @@ String - charAt, charCodeAt, fromCharCode, mutation, concat, casing, includes, i
 split, slice, substring, at, repeat, replace and all, trim
 
 Number - toString, toFixed, toPrecision, parseInt, parseFloat(), toLocaleString(), isNaN, isInteger
+
+JS part 6
+
+# JS Objects
+
+1. [is happy challenge]
+2. reduce method
+3. Math - abs, ceil, random, floor, round, min, max, sqrt, PI, pow
+
+### Objects
+
+- object literal
+- access data and add new properties
+- delete property and bracket notation
+- dynamic keys
+- property shorthand
+- nested objects and array of objects
+- for … in loop
+- order of keys in objects
+- nested objects and optional chaining
+- Object references and copying - pass by value and pass by reference
+- spread operator
+- Garbage collection
+- functions as methods
+- destructuring
+- this keyword
+- getters and setters
+- Object methods - assign, create, entries, values, keys, freeze, seal
+- prototypes
+- constructor function
