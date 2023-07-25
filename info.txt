@@ -43,22 +43,33 @@ JS part 6
 
 ### Objects
 
-- object literal
-- access data and add new properties
-- delete property and bracket notation
-- dynamic keys
-- property shorthand
-- nested objects and array of objects
+- object literal +
+- access data and add new properties + 
+- delete property and bracket notation +
+- dynamic keys +
+- property shorthand + 
+- nested objects and array of objects 
 - for … in loop
-- order of keys in objects
-- nested objects and optional chaining
-- Object references and copying - pass by value and pass by reference
+- order of keys in objects 
+- optional chaining +
+- Object references and copying - pass by value and pass by reference +
 - spread operator
 - Garbage collection
-- functions as methods
 - destructuring
 - this keyword
+- functions as methods
 - getters and setters
-- Object methods - assign, create, entries, values, keys, freeze, seal
+- Object methods - assign, create, entries, values, keys, freeze, seal, preventExtensions, hasOwnProperty
 - prototypes
 - constructor function
+- class
+- define properties
+- JSON
+- Polyfills
+- JS parsing
+- deep clone
+- Custom methods
+
+- Map and Set
+- Date
+- call apply bind
