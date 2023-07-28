@@ -63,13 +63,20 @@ JS part 6
 - prototypes
 - constructor function
 - class
-- define properties
 - JSON
 - Polyfills
-- JS parsing
-- deep clone
 - Custom methods
 
-- Map and Set
-- Date
+- Why use OOP? & this in depth
+- arrow function vs function
 - call apply bind
+- define properties
+- deep clone
+
+- Map and Set
+- Symbol Type
+- closure
+- currying
+- JS parsing
+- import and export
+- Date
